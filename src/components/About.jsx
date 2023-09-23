@@ -14,15 +14,15 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-        Hey this is Anup Kumar M and I'm currently pursuing a Master's
-          degree in Computer Applications at MS Ramaiah Institute of Technology.
-        I have always been interested in technology and its potential to
-          improve our lives. In my free time, I enjoy exploring new programming
-          languages and frameworks, working on personal coding projects, and
-          contributing to open source communities. I'm particularly passionate
-          about developing software solutions that solve real-world problems and
-          make a positive impact on society. Ah others who share my
-          passion for technology and innovation.
+        Software Developer 
+
+I am a recent Master Of Computer Application graduate with a passion for technology and a strong foundation in Data Structure and Algorithms (DSA) and Object-Oriented Programming (OOP) concepts. As a Developer, I have gained valuable experience in developing and implementing software solutions for various Personal projects.
+
+Certainly, here's a rephrased version of your statement with the information about winning an award:
+
+"Beyond my professional endeavors, I am honored to have received recognition for my entrepreneurial spirit. I was awarded the 'Start-Up Award' by the Institution’s Innovation Council, further affirming my commitment to innovation and excellence."
+
+I am constantly seeking new challenges and opportunities to further develop my skills and knowledge. I am eager to bring my passion, technical expertise, and strong problem-solving skills to new projects and continue to make a positive impact in the industry.
         </p>
       </div>
     </div>
