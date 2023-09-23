@@ -14,7 +14,7 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-        Software Developer 
+        Software Developer </br>
 
 I am a recent Master Of Computer Application graduate with a passion for technology and a strong foundation in Data Structure and Algorithms (DSA) and Object-Oriented Programming (OOP) concepts. As a Developer, I have gained valuable experience in developing and implementing software solutions for various Personal projects.
 
