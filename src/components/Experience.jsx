@@ -2,11 +2,11 @@ import React from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import Mern from "../assets/Mern.png";
+import Python from "../assets/Python.png";
+import Devops from "../assets/Devops.jpeg";
 import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
+import Java from "../assets/java.png";
 
 const Experience = () => {
   const techs = [
@@ -30,26 +30,26 @@ const Experience = () => {
     },
     {
       id: 4,
-      src: reactImage,
-      title: "REACT",
-      style: "shadow-blue-500",
+      src: Mern,
+      title: "MERN",
+      style: "shadow-blue-100",
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
+      src: Java,
+      title: "Java",
       style: "shadow-sky-500",
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next",
+      src: Python,
+      title: "Python",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: graphql,
-      title: "Graphql",
+      src: Devops,
+      title: "Devops",
       style: "shadow-pink-400",
     },
     {

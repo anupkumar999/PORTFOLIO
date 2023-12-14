@@ -12,12 +12,10 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white ">
-            I,m <br/> a Passionate Developer
+         <br/>  Software Developer
           </h2>
           <p className="text-white py-4 max-w-md">
-            I'm currently pursuing a Master's degree in Computer Applications at
-            MS Ramaiah Institute of Technology. I have always been interested in
-            technology and its potential to improve our lives.
+          Recent MCA graduate with a strong foundation in DSA and OOPS. Skilled Full Stack Developer with a proven track record in end-to-end web application development. Awarded the 'Start-Up Award' for entrepreneurial spirit. Eager to apply technical expertise, problem-solving skills, and a passion for innovation to drive industry impact.
           </p>
 
           <div>
