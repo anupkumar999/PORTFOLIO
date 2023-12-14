@@ -19,7 +19,7 @@ const Portfolio = () => {
     },
     {
       id:3,
-      src:navbar
+      src:
     },
     {
       id:4,
