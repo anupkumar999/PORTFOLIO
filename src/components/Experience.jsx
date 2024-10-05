@@ -1,55 +1,56 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import Mern from "../assets/Mern.png";
 import Python from "../assets/Python.png";
-import Devops from "../assets/Devops.jpeg";
 import github from "../assets/github.png";
-import Java from "../assets/java.png";
+import GoogleCloud from "../assets/GoogleCloud.png";
+import sql from "../assets/sql.png"
+import Ml from "../assets/Ml.png"
+import Kubernetes from "../assets/kubernetes.png"
+import Etl from "../assets/Etl.png"
+import Docker from "../assets/Docker.png"
+
 
 const Experience = () => {
   const techs = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JAVASCRIPT",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: Mern,
-      title: "MERN",
-      style: "shadow-blue-100",
-    },
-    {
-      id: 5,
-      src: Java,
-      title: "Java",
-      style: "shadow-sky-500",
-    },
-    {
-      id: 6,
       src: Python,
       title: "Python",
       style: "shadow-white",
     },
     {
+      id: 2,
+      src: sql,
+      title: "Sql",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 3,
+      src: GoogleCloud,
+      title: "Google Cloud",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 4,
+      src: Ml,
+      title: "Machine Learning",
+      style: "shadow-blue-100",
+    },
+    {
+      id: 5,
+      src: Kubernetes,
+      title: "Kubernetes",
+      style: "shadow-sky-500",
+    },
+    {
+      id: 6,
+      src: Etl,
+      title: "ETL",
+      style: "shadow-white",
+    },
+    {
       id: 7,
-      src: Devops,
-      title: "Devops",
+      src: Docker,
+      title: "Docker",
       style: "shadow-pink-400",
     },
     {

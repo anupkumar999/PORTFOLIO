@@ -14,15 +14,38 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-        Software Developer
+        Software Engineer
 
-I am a recent Master Of Computer Application graduate with a passion for technology and a strong foundation in Data Structure and Algorithms (DSA) and Object-Oriented Programming (OOP) concepts. As a Developer, I have gained valuable experience in developing and implementing software solutions for various Personal projects.
+        Hello! I'm Anup Kumar, a passionate data enthusiast I had hands-on experience in data science and data engineering.
 
-Certainly, here's a rephrased version of your statement with the information about winning an award:
+From transforming raw data into actionable insights to building end-to-end data pipelines, I thrive on solving complex challenges and turning data into powerful tools for decision-making.
+<br />
+<br />
+🌟 What I Bring to the Table:
 
-"Beyond my professional endeavors, I am honored to have received recognition for my entrepreneurial spirit. I was awarded the 'Start-Up Award' by the Institution’s Innovation Council, further affirming my commitment to innovation and excellence."
+Versatile Skill Set: Proficient in Python, SQL, and Java, with a strong foundation in Data Structures, Algorithms, and Object-Oriented Programming.
+Google Cloud Expertise: Hands-on experience with Google Cloud Platform services like Vertex AI for machine learning models, BigQuery for data warehousing, Cloud Functions and App Engine for serverless applications, and tools like Cloud Storage and Pub/Sub for real-time data streaming.
+Application Development: Built an app and developed intelligent agents, integrating them into robust data pipelines to streamline processes and enhance functionality.
+End-to-End Project Experience: In a dynamic, small-company environment, I've worn multiple hats—building scalable data pipelines, deploying ML models, and optimizing data workflows.
+<br />
+<br />
 
-I am constantly seeking new challenges and opportunities to further develop my skills and knowledge. I am eager to bring my passion, technical expertise, and strong problem-solving skills to new projects and continue to make a positive impact in the industry.
+🏆 Achievements:
+
+Start-Up Award Recipient: Honored by the Institution’s Innovation Council for my entrepreneurial spirit and commitment to innovation.
+Impactful Projects: Successfully managed multiple data engineering tasks that enhanced operational efficiency and provided actionable business insights.
+
+<br />
+<br />
+💡 Why I Love What I Do:
+
+Ever since diving into the world of data, I've been fascinated by its potential to solve real-world problems. The thrill of building applications and intelligent agents that automate and optimize processes excites me, and I am committed to staying at the forefront of technology by continuously learning and applying new methodologies.
+
+<br />
+<br />
+🤝 Let's Connect:
+
+I'm eager to collaborate with forward-thinking professionals and organizations that value innovation and data-driven decision-making. If you're looking for someone who can elevate your data initiatives, let's connect to discuss how we can achieve success together.
         </p>
       </div>
     </div>
