@@ -11,8 +11,8 @@ const Home = () => {
           <h1 className="text-5xl sm:text-7xl font-extrabold text-black">
             AI Software Engineer
           </h1>
-          <p className="text-gray-600 text-lg py-4 max-w-md mx-auto md:mx-0 leading-relaxed">
-            Passionate data enthusiast with hands-on experience in building end-to-end data pipelines and turning raw data into powerful, actionable insights.
+          <p className="text-gray-600 text-xl py-4 max-w-md mx-auto md:mx-0 leading-relaxed">
+            I build intelligent, data-driven applications and end-to-end cloud solutions that solve real-world problems and deliver measurable business value.
           </p>
 
           <div>
@@ -20,9 +20,9 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center justify-center mx-auto md:mx-0 rounded-full bg-black cursor-pointer hover:bg-gray-800 duration-300"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center justify-center mx-auto md:mx-0 rounded-full bg-black cursor-pointer hover:bg-gray-800 duration-300 transform hover:scale-[1.02] transition-transform"
             >
-              Portfolio
+              View My Work
               <span className="group-hover:translate-x-1 duration-300">
                 <MdOutlineArrowRight size={25} className="ml-1" />
               </span>
