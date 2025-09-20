@@ -1,64 +1,48 @@
 import React from "react";
 import Indoor from "../assets/portfolio/Indoor.jpeg";
 import Hotelbooking from "../assets/portfolio/Hotelbooking.jpeg";
-import Ipldataanalysis from "../assets/portfolio/Ipldataanalysis.png";
-import Privategpt from "../assets/portfolio/Privategpt.png";
 
 const Portfolio = () => {
   const portfolios = [
-    {
-      id: 1,
-      src: Indoor,
-      githubLink: "https://github.com/anupkumar999/Indoor_Navigation.git",
-    },
-    {
-      id: 2,
-      src: Ipldataanalysis,
-      githubLink: "https://github.com/anupkumar999/IPL-DATA-ANALYSIS-USING-PYTHON-",
-    },
-    {
-      id: 3,
-      src: Hotelbooking,
-      githubLink: "https://github.com/anupkumar999/HOTEL-BOOKING",
-    },
-    {
-      id: 4,
-      src: Privategpt,
-      githubLink: "https://github.com/anupkumar999/ScrapingHospital",
-    },
+    { id: 1, src: Indoor, title: "Indoor Navigation System using AR", description: "An award-winning system to enhance visitor experience with 20% faster navigation. Recognized as 'Best Start-Up' by the Institution's Innovation Council.", githubLink: "https://github.com/anupkumar999/Indoor_Navigation.git" },
+    { id: 2, src: Hotelbooking, title: "Hotel Reservation System", description: "A full-stack MERN application for hotel reservations, featuring advanced price filtering and dynamic booking calculations, improving search accuracy by 30%.", githubLink: "https://github.com/anupkumar999/HOTEL-BOOKING" },
   ];
 
-  const openGitHubLink = (githubLink) => {
-    window.open(githubLink, "_blank");
-  };
-
   return (
-    <div name="portfolio" className="bg-gradient-to-b from-slate-800 to-slate-800 w-full text-white md:h-screen">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
+    <section name="portfolio" className="bg-white w-full text-black py-24">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 py-2 border-red-900">
-            portfolio{" "}
-          </p>
-          <p className="py-6"> Check out some of my work right here</p>
+          <h2 className="text-4xl font-extrabold inline border-b-4 border-gray-400">
+            Portfolio
+          </h2>
+          <p className="py-6 text-lg text-gray-600">Check out some of my work right here.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, githubLink }) => (
-            <div key={id} className="shadow-md shadow-slate-900 rounded-lg">
-              <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
-              <div className="flex items-center justify-center">
-                <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                  onClick={() => openGitHubLink(githubLink)}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 px-4 sm:px-0">
+          {portfolios.map(({ id, src, title, description, githubLink }) => (
+            <div key={id} className="rounded-lg border border-gray-200 flex flex-col">
+              <img
+                src={src}
+                alt={title}
+                className="rounded-t-lg duration-200 hover:opacity-90"
+              />
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold mb-2">{title}</h3>
+                <p className="text-gray-600 flex-grow">{description}</p>
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center mt-4 px-6 py-3 duration-200 hover:scale-105 bg-black text-white rounded-full"
                 >
-                  Code
-                </button>
+                  View Code
+                </a>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
