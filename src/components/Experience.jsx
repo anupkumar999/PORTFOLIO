@@ -10,8 +10,8 @@ import Docker from "../assets/Docker.png";
 
 const Experience = () => {
   const experiences = [
-    { company: "Pluto7", title: "AI Software Engineer", duration: "May 2024 - Present", location: "Greater Bengaluru Area", description: null, },
-    { company: "Pluto7", title: "Internship Trainee", duration: "Feb 2024 - Apr 2024", location: "Bangalore Urban, Karnataka, India", description: null, },
+    { company: "Pluto7", title: "AI Software Engineer", duration: "May 2024 - Present", location: "Greater Bengaluru Area", description: null },
+    { company: "Pluto7", title: "Internship Trainee", duration: "Feb 2024 - Apr 2024", location: "Bangalore Urban, Karnataka, India", description: null },
     { company: "Dense Layer AI Technologies", title: "AI Engineering Intern", duration: "Dec 2023 - Feb 2024", location: "Greater Bengaluru Area · Remote", description: "Worked on projects involving front-end and back-end technologies for AI/ML, including API development and Docker deployment." },
   ];
 

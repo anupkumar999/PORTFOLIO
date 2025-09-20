@@ -11,7 +11,7 @@ const Home = () => {
           <h1 className="text-5xl sm:text-7xl font-extrabold text-black">
             AI Software Engineer
           </h1>
-          <p className="text-gray-600 text-lg py-4 max-w-md mx-auto md:mx-0">
+          <p className="text-gray-600 text-lg py-4 max-w-md mx-auto md:mx-0 leading-relaxed">
             Passionate data enthusiast with hands-on experience in building end-to-end data pipelines and turning raw data into powerful, actionable insights.
           </p>
 

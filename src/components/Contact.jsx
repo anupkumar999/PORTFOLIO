@@ -13,10 +13,12 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/926ac0a5-0360-447c-b8ae-92c61d6f8ee9"
+            name="contact"
             method="POST"
+            data-netlify="true"
             className="flex flex-col w-full md:w-1/2"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               name="Name"
