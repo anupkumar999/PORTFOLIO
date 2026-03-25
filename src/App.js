@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 <About/>
 <Portfolio/>
 <Experience/>
+<Certifications />
 <Contact/>
 <SocialLinks/>
 

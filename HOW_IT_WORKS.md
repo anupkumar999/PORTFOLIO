@@ -18,12 +18,13 @@ portfolio/
 │   ├── assets/             # Images, PDFs, and other static media
 │   ├── components/         # Reusable React components
 │   │   ├── NavBar.jsx      # Top navigation bar with smooth scroll links
-│   │   ├── Home.jsx        # Landing section introducing the user
-│   │   ├── About.jsx       # Detailed "About Me" section
-│   │   ├── Portfolio.jsx   # Grid showcasing previous projects
-│   │   ├── Experience.jsx  # Technologies and skills section
-│   │   ├── Contact.jsx     # Contact form for getting in touch
-│   │   └── SocialLinks.jsx # Sticky sidebar with links to social profiles
+│   │   ├── Home.jsx        # Landing section with live AI status badge
+│   │   ├── About.jsx       # Professional summary with GenAI focus
+│   │   ├── Portfolio.jsx   # Projects showcasing GenAI & ML systems
+│   │   ├── Experience.jsx  # Career history (JPMC, Pluto7, etc.)
+│   │   ├── Certifications.jsx # GCP ML Professional & other credentials
+│   │   ├── Contact.jsx     # Netlify-integrated contact form
+│   │   └── SocialLinks.jsx # Fixed sidebar with LinkedIn/GitHub links
 │   ├── App.js              # Main component that mounts all the sections
 │   ├── index.js            # Entry point for React
 │   └── index.css           # Global styles and Tailwind directives

@@ -9,13 +9,21 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full min-h-screen px-4 md:flex-row md:justify-between">
         <div className="flex flex-col justify-center h-full md:w-1/2 md:pr-12 text-center md:text-left">
           <h1 className="text-5xl sm:text-7xl font-extrabold text-black">
-            AI Software Engineer
+            Software Engineer II <span className="text-gray-500">| AI & ML</span>
           </h1>
           <p className="text-gray-600 text-xl py-4 max-w-md mx-auto md:mx-0 leading-relaxed">
-            I build intelligent, data-driven applications and end-to-end cloud solutions that solve real-world problems and deliver measurable business value.
+            I am <span className="font-bold text-black">Anup Kumar</span>, building the future of finance and enterprise intelligence at <span className="font-bold text-blue-600">JPMorgan Chase & Co.</span> 
+            Specializing in Generative AI, LLMs, and cloud-native ML systems.
           </p>
 
           <div>
+            <div className="flex items-center gap-2 mb-4 bg-green-50 text-green-700 w-fit px-3 py-1 rounded-full text-sm font-bold border border-green-200">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                AI AGENT: ACTIVE & OPTIMIZING
+            </div>
             <Link
               to="portfolio"
               smooth

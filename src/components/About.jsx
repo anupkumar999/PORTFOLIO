@@ -10,16 +10,21 @@ const About = () => {
           </h2>
         </div>
 
-        <p className="text-xl mt-10 text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          I am an AI Software Engineer with ~2 years of experience in AI, data engineering, and cloud-based solutions. My work spans AI agents and Agent Development Kit (ADK), where I design and develop LLM-powered applications that integrate seamlessly into enterprise workflows.
+        <p className="text-xl mt-10 text-gray-700 leading-relaxed max-w-4xl mx-auto">
+          I’m <span className="font-bold text-black">Anup Kumar</span> — a Software Engineer II at <span className="font-bold text-blue-600">JPMorgan Chase & Co.</span> specializing in <span className="text-black font-semibold">Generative AI</span>, <span className="text-black font-semibold">LLM development</span>, and cloud-native ML systems on Google Cloud. 
         </p>
         <br />
-        <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          From transforming raw data into actionable insights to building end-to-end data pipelines, I thrive on solving complex challenges. My technical strengths include Python, SQL, GCP, and modern AI frameworks. I am passionate about creating agentic systems and automation frameworks that deliver measurable business value.
+        <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+          I build <span className="font-bold text-black italic">agentic systems</span>, automated pipelines, and end-to-end ML solutions that solve real customer problems at scale. My expertise lies in designing Vertex AI workflows, BigQuery SQL generation pipelines, and enterprise-grade MLOps architectures.
         </p>
         <br />
-        <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          🏆 Honored with the "Best Start-Up Award" by the Institution’s Innovation Council for entrepreneurial spirit and commitment to innovation.
+        <div className="flex flex-wrap justify-center gap-4 py-8">
+            <span className="bg-gray-100 px-4 py-2 rounded-full font-medium border border-gray-200">✅ Google Cloud Certified ML Engineer</span>
+            <span className="bg-gray-100 px-4 py-2 rounded-full font-medium border border-gray-200">✅ GenAI Agent Development</span>
+            <span className="bg-gray-100 px-4 py-2 rounded-full font-medium border border-gray-200">✅ MLOps & Real-time Inference</span>
+        </div>
+        <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto italic">
+          🏆 Recipient of the <span className="font-bold text-black">"Best Start-Up Award"</span> (Ramaiah Institute of Technology) for an innovative AR-based navigation system.
         </p>
       </div>
     </section>

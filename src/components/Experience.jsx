@@ -10,13 +10,45 @@ import Docker from "../assets/Docker.png";
 
 const Experience = () => {
   const experiences = [
-    { company: "Pluto7", title: "AI Software Engineer", duration: "May 2024 - Present", location: "Greater Bengaluru Area", description: null },
-    { company: "Pluto7", title: "Internship Trainee", duration: "Feb 2024 - Apr 2024", location: "Bangalore Urban, Karnataka, India", description: null },
-    { company: "Dense Layer AI Technologies", title: "AI Engineering Intern", duration: "Dec 2023 - Feb 2024", location: "Greater Bengaluru Area · Remote", description: "Worked on projects involving front-end and back-end technologies for AI/ML, including API development and Docker deployment." },
+    { 
+      company: "JPMorgan Chase & Co.", 
+      title: "Software Engineer II", 
+      duration: "Jan 2026 - Present", 
+      location: "Bengaluru, Karnataka, India", 
+      description: "Working in Asset & Wealth Management, focusing on Python, AI/ML engineering, and building high-performance financial systems." 
+    },
+    { 
+      company: "Pluto7", 
+      title: "AI Software Engineer", 
+      duration: "May 2024 - Jan 2026", 
+      location: "Greater Bengaluru Area", 
+      description: "Developed agentic AI workflows with Vertex AI, built LLM-based SQL generation systems, and deployed real-time ML endpoints with integrated MLOps pipelines." 
+    },
+    { 
+      company: "Pluto7", 
+      title: "Internship Trainee", 
+      duration: "Feb 2024 - Apr 2024", 
+      location: "Bengaluru Urban", 
+      description: "Focused on Google Cloud Platform (GCP), SQL, and data engineering fundamentals for enterprise projects." 
+    },
+    { 
+      company: "Dense Layer AI Technologies", 
+      title: "AI Engineering Intern", 
+      duration: "Dec 2023 - Feb 2024", 
+      location: "Remote", 
+      description: "Worked on UI/UX for AI applications and back-end integration with Microservices." 
+    },
   ];
 
   const techs = [
-    { id: 1, src: Python, title: "Python" }, { id: 2, src: sql, title: "SQL" }, { id: 3, src: GoogleCloud, title: "Google Cloud" }, { id: 4, src: Ml, title: "Machine Learning" }, { id: 5, src: Kubernetes, title: "Kubernetes" }, { id: 6, src: Etl, title: "ETL" }, { id: 7, src: Docker, title: "Docker" }, { id: 8, src: github, title: "Github" },
+    { id: 1, src: Python, title: "Python & AI/ML" }, 
+    { id: 2, src: sql, title: "SQL & BigQuery" }, 
+    { id: 3, src: GoogleCloud, title: "Vertex AI & GCP" }, 
+    { id: 4, src: Ml, title: "LLM & GenAI" }, 
+    { id: 5, src: Kubernetes, title: "Kubernetes" }, 
+    { id: 6, src: Etl, title: "Data Pipelines" }, 
+    { id: 7, src: Docker, title: "Docker" }, 
+    { id: 8, src: github, title: "Github" },
   ];
 
   return (
