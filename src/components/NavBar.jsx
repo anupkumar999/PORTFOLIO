@@ -28,41 +28,44 @@ const NavBar = () => {
                 key={id}
                 className="cursor-pointer capitalize text-xs font-semibold text-gray-500 hover:text-black transition-colors duration-300"
               >
-                <Link hex to={link} smooth duration={800} offset={-64}>
+                <Link to={link} smooth duration={800} offset={-64}>
                   {link}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        
-        <div className="md:hidden">
-            {/* Mobile menu icon remains similar but smaller */}
-        </div>
-      </div>
-    </header>
 
-      {nav && (
-        <nav className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-600">
-          <ul>
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
-              >
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={link}
-                  smooth
-                  duration={500}
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer z-50 text-gray-600 md:hidden"
+        >
+          {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        </div>
+
+        {nav && (
+          <nav className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-600 z-40">
+            <ul>
+              {links.map(({ id, link }) => (
+                <li
+                  key={id}
+                  className="px-4 cursor-pointer capitalize py-6 text-4xl"
                 >
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+                  <Link
+                    onClick={() => setNav(!nav)}
+                    to={link}
+                    smooth
+                    duration={500}
+                    offset={-64}
+                  >
+                    {link}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+      </div>
     </header>
   );
 };
