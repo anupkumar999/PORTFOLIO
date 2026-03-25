@@ -1,71 +1,57 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { MdOutlineMoreHoriz, MdOutlineClose } from "react-icons/md";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
-    { id: 1, link: "home" },
-    { id: 2, link: "about" },
-    { id: 3, link: "portfolio" },
-    { id: 4, link: "experience" },
-    { id: 5, link: "certifications" },
-    { id: 6, link: "contact" },
+    { id: 1, name: "Intelligence", target: "home" },
+    { id: 2, name: "Showcase", target: "portfolio" },
+    { id: 3, name: "Legacy", target: "experience" },
+    { id: 4, name: "Credentials", target: "certifications" },
+    { id: 5, name: "Connect", target: "contact" },
   ];
 
   return (
-    <header className="flex justify-center items-center w-full h-16 text-black bg-white/70 backdrop-blur-md fixed z-50 border-b border-gray-200/50">
-      <div className="max-w-screen-xl w-full flex justify-between items-center px-6">
-        <div>
-          <h1 className="text-xl font-bold tracking-tight hover:opacity-70 duration-300 cursor-pointer">Anup Kumar</h1>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'apple-glass h-12' : 'bg-white h-16'}`}>
+      <div className="max-w-screen-xl mx-auto h-full flex justify-between items-center px-8">
+        
+        <div className="cursor-pointer">
+          <Link to="home" smooth duration={800} className="text-sm font-black tracking-tight uppercase hover:opacity-60 transition-opacity">Anup Kumar</Link>
         </div>
 
-        <nav className="hidden md:flex">
-          <ul className="flex items-center space-x-8">
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="cursor-pointer capitalize text-xs font-semibold text-gray-500 hover:text-black transition-colors duration-300"
-              >
-                <Link to={link} smooth duration={800} offset={-64}>
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <nav className="hidden md:flex space-x-10">
+          {links.map(({ id, name, target }) => (
+            <Link key={id} to={target} smooth duration={800} offset={-48} 
+              className="text-[11px] font-semibold text-gray-500 hover:text-black cursor-pointer transition-colors tracking-wide uppercase">
+              {name}
+            </Link>
+          ))}
         </nav>
 
-        <div
-          onClick={() => setNav(!nav)}
-          className="cursor-pointer z-50 text-gray-600 md:hidden"
-        >
-          {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        <div onClick={() => setNav(!nav)} className="md:hidden cursor-pointer text-black">
+          {nav ? <MdOutlineClose size={24} /> : <MdOutlineMoreHoriz size={24} />}
         </div>
-
-        {nav && (
-          <nav className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-600 z-40">
-            <ul>
-              {links.map(({ id, link }) => (
-                <li
-                  key={id}
-                  className="px-4 cursor-pointer capitalize py-6 text-4xl"
-                >
-                  <Link
-                    onClick={() => setNav(!nav)}
-                    to={link}
-                    smooth
-                    duration={500}
-                    offset={-64}
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
       </div>
+
+      {nav && (
+        <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8">
+          {links.map(({ id, name, target }) => (
+            <Link key={id} onClick={() => setNav(false)} to={target} smooth duration={800} 
+              className="text-4xl font-bold tracking-tight text-gray-800 hover:text-black cursor-pointer">
+              {name}
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 };

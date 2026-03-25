@@ -9,8 +9,8 @@ const Portfolio = () => {
       id: 1, 
       src: PrivateGPT, 
       title: "BRD Automation", 
-      subtitle: "Agentic Documentation",
-      description: "Automating requirement engineering with structured LLM workflows.", 
+      subtitle: "Agentic Engineering",
+      description: "Building autonomous documentation pipelines with structured LLM workflows.", 
       githubLink: "https://github.com/anupkumar999",
       tags: ["Vertex AI", "LLM"],
       gridClass: "md:col-span-2 md:row-span-2"
@@ -38,9 +38,9 @@ const Portfolio = () => {
     { 
       id: 4, 
       src: IPLAnalysis, 
-      title: "MLOps Architecture", 
+      title: "MLOps Engine", 
       subtitle: "Real-time Inference",
-      description: "Production-grade ML endpoints on Vertex AI with automated CI/CD.", 
+      description: "Architecting production-grade ML endpoints with CI/CD automation.", 
       githubLink: "https://github.com/anupkumar999",
       tags: ["GCP", "Docker"],
       gridClass: "md:col-span-2 md:row-span-1"
@@ -48,39 +48,39 @@ const Portfolio = () => {
   ];
 
   return (
-    <section name="portfolio" className="bg-gray-50 w-full text-black py-32">
-      <div className="max-w-screen-xl p-6 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-12 text-center md:text-left">
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+    <section name="portfolio" className="bg-white w-full text-black py-48">
+      <div className="max-w-screen-xl px-8 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-20 text-center md:text-left">
+          <h2 className="text-[12vw] md:text-[8rem] font-black tracking-tighter leading-none mb-4 text-gradient">
             Showcase.
           </h2>
-          <p className="text-xl text-gray-500 font-medium">Extraordinary projects built with AI.</p>
+          <p className="text-2xl text-gray-400 font-bold max-w-2xl">High-impact solutions. Built on intelligence.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[350px]">
           {portfolios.map(({ id, src, title, subtitle, description, githubLink, tags, gridClass }) => (
-            <div key={id} className={`group relative rounded-3xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 ${gridClass}`}>
+            <div key={id} className={`bento-card relative group ${gridClass}`}>
               <img
                 src={src}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100"
+                className="w-full h-full object-cover grayscale transition-all duration-[1s] group-hover:grayscale-0 group-hover:scale-105 opacity-40 group-hover:opacity-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent p-8 flex flex-col justify-end">
-                <div className="flex flex-wrap gap-2 mb-3 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent p-12 flex flex-col justify-end">
+                <div className="flex flex-wrap gap-2 mb-4 translate-y-12 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                   {tags?.map(tag => (
                     <span key={tag} className="text-[10px] uppercase tracking-widest font-black px-2 py-1 bg-black text-white rounded-md">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">{subtitle}</p>
-                <h3 className="text-3xl font-bold mb-2 tracking-tight">{title}</h3>
-                <p className="text-gray-600 font-medium text-sm max-w-xs mb-4">{description}</p>
+                <p className="text-sm font-black text-blue-600 uppercase tracking-widest mb-1">{subtitle}</p>
+                <h3 className="text-4xl font-black mb-3 tracking-tighter leading-none">{title}</h3>
+                <p className="text-gray-500 font-bold text-lg max-w-xs mb-6 tracking-tight leading-snug">{description}</p>
                 <a
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit text-sm font-bold px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+                  className="w-fit text-sm font-black px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors shadow-lg shadow-gray-200"
                 >
                   View Case Study
                 </a>
