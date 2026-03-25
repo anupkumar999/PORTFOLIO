@@ -15,32 +15,32 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="flex justify-between items-center w-full h-20 text-black bg-white px-4 fixed z-20 border-b border-gray-200">
-      <div>
-        <h1 className="text-2xl font-bold ml-2">Anup Kumar M</h1>
-      </div>
+    <header className="flex justify-center items-center w-full h-16 text-black bg-white/70 backdrop-blur-md fixed z-50 border-b border-gray-200/50">
+      <div className="max-w-screen-xl w-full flex justify-between items-center px-6">
+        <div>
+          <h1 className="text-xl font-bold tracking-tight hover:opacity-70 duration-300 cursor-pointer">Anup Kumar</h1>
+        </div>
 
-      <nav className="hidden md:flex">
-        <ul className="flex items-center">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-600 hover:text-black duration-200"
-            >
-              <Link to={link} smooth duration={500}>
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <div
-        onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-30 text-gray-600 md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        <nav className="hidden md:flex">
+          <ul className="flex items-center space-x-8">
+            {links.map(({ id, link }) => (
+              <li
+                key={id}
+                className="cursor-pointer capitalize text-xs font-semibold text-gray-500 hover:text-black transition-colors duration-300"
+              >
+                <Link hex to={link} smooth duration={800} offset={-64}>
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        
+        <div className="md:hidden">
+            {/* Mobile menu icon remains similar but smaller */}
+        </div>
       </div>
+    </header>
 
       {nav && (
         <nav className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-600">

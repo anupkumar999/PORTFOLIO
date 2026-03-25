@@ -14,75 +14,74 @@ const Experience = () => {
       company: "JPMorgan Chase & Co.", 
       title: "Software Engineer II", 
       duration: "Jan 2026 - Present", 
-      location: "Bengaluru, Karnataka, India", 
-      description: "Working in Asset & Wealth Management, focusing on Python, AI/ML engineering, and building high-performance financial systems." 
+      location: "Bengaluru, India", 
+      description: "Asset & Wealth Management. High-performance Python & AI/ML engineering." 
     },
     { 
       company: "Pluto7", 
       title: "AI Software Engineer", 
       duration: "May 2024 - Jan 2026", 
-      location: "Greater Bengaluru Area", 
-      description: "Developed agentic AI workflows with Vertex AI, built LLM-based SQL generation systems, and deployed real-time ML endpoints with integrated MLOps pipelines." 
+      location: "Bengaluru, India", 
+      description: "Agentic AI workflows. Vertex AI. MLOps. GenAI at scale." 
     },
     { 
       company: "Pluto7", 
       title: "Internship Trainee", 
       duration: "Feb 2024 - Apr 2024", 
-      location: "Bengaluru Urban", 
-      description: "Focused on Google Cloud Platform (GCP), SQL, and data engineering fundamentals for enterprise projects." 
-    },
-    { 
-      company: "Dense Layer AI Technologies", 
-      title: "AI Engineering Intern", 
-      duration: "Dec 2023 - Feb 2024", 
-      location: "Remote", 
-      description: "Worked on UI/UX for AI applications and back-end integration with Microservices." 
+      location: "Bengaluru, India", 
+      description: "GCP Cloud Infrastructure & Data Pipelines." 
     },
   ];
 
   const techs = [
-    { id: 1, src: Python, title: "Python & AI/ML" }, 
-    { id: 2, src: sql, title: "SQL & BigQuery" }, 
-    { id: 3, src: GoogleCloud, title: "Vertex AI & GCP" }, 
-    { id: 4, src: Ml, title: "LLM & GenAI" }, 
-    { id: 5, src: Kubernetes, title: "Kubernetes" }, 
-    { id: 6, src: Etl, title: "Data Pipelines" }, 
+    { id: 1, src: Python, title: "Python" }, 
+    { id: 2, src: sql, title: "SQL" }, 
+    { id: 3, src: GoogleCloud, title: "GCP" }, 
+    { id: 4, src: Ml, title: "GenAI" }, 
+    { id: 5, src: Kubernetes, title: "K8s" }, 
+    { id: 6, src: Etl, title: "ETL" }, 
     { id: 7, src: Docker, title: "Docker" }, 
-    { id: 8, src: github, title: "Github" },
+    { id: 8, src: github, title: "GitHub" },
   ];
 
   return (
-    <section name="experience" className="bg-white w-full py-24">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-black">
-        <div className="pb-8">
-          <h2 className="text-4xl font-extrabold inline border-b-4 border-gray-400">
-            Experience
+    <section name="experience" className="bg-white w-full py-32">
+      <div className="max-w-screen-xl mx-auto p-6 flex flex-col justify-center w-full h-full text-black">
+        <div className="pb-12 text-center md:text-left">
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+            Legacy.
           </h2>
+          <p className="text-xl text-gray-500 font-medium italic">A timeline of technical excellence.</p>
         </div>
 
-        <div className="mt-10 grid md:grid-cols-2 gap-12">
+        <div className="mt-12 space-y-12">
           {experiences.map(({ company, title, duration, location, description }, index) => (
-            <div key={index} className="border-l-2 border-gray-200 pl-6">
-              <p className="text-2xl font-bold">{company}</p>
-              <p className="text-lg font-medium text-gray-800">{title}</p>
-              <p className="text-sm text-gray-500">{duration} · {location}</p>
-              {description && (
-                <p className="mt-2 text-gray-600">{description}</p>
-              )}
+            <div key={index} className="group flex flex-col md:flex-row gap-8 items-start border-b border-gray-100 pb-12 transition-all duration-500 hover:bg-gray-50/50 p-6 rounded-3xl">
+              <div className="w-full md:w-1/3">
+                <p className="text-sm font-black text-blue-600 uppercase tracking-[0.2em] mb-2">{duration}</p>
+                <h3 className="text-3xl font-bold tracking-tight">{company}</h3>
+                <p className="text-lg font-semibold text-gray-400 mt-1">{location}</p>
+              </div>
+              <div className="w-full md:w-2/3">
+                <p className="text-2xl font-bold text-gray-800 mb-4">{title}</p>
+                <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-2xl">{description}</p>
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-20">
-          <h3 className="text-3xl font-bold">Technical Skills</h3>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-4 sm:px-0">
+        <div className="mt-32">
+          <h3 className="text-4xl font-bold tracking-tight text-center mb-16 underline underline-offset-[12px] decoration-blue-600">Technical Arsenal</h3>
+          <div className="w-full grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-8 px-4 sm:px-0">
             {techs.map(({ id, src, title }) => (
               <div
                 key={id}
-                className="p-4 border border-gray-200 rounded-lg hover:scale-105 duration-300 flex flex-col items-center justify-center"
+                className="group flex flex-col items-center justify-center space-y-4"
               >
-                <img src={src} alt={title} className="w-20 mx-auto" />
-                <p className="mt-4 font-medium">{title}</p>
+                <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center p-4 transition-all duration-500 group-hover:bg-white group-hover:shadow-2xl group-hover:-translate-y-2 grayscale group-hover:grayscale-0">
+                    <img src={src} alt={title} className="w-full h-full object-contain" />
+                </div>
+                <p className="text-xs font-black uppercase tracking-widest text-gray-400 group-hover:text-black transition-colors">{title}</p>
               </div>
             ))}
           </div>
